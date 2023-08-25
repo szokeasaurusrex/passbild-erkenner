@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="de-AT">
+
+<head>
+    <title>Passbild Erkenner</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Passbild Erkenner</h1>
+        <div id="dropTarget">
+            <img id="uploadedImage" />
+            <span id="responseText">Bild hochladen!</span>
+        </div>
+        <!-- <form id="uploadForm">
+            <input type="file" name="photo">
+            <input type="submit" value="Bild prüfen!">
+        </form> -->
+        <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+    </div>
+</body>
+
+</html>

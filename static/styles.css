@@ -1,0 +1,41 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    background-color: #EFF1F3;
+    color: #223843;
+}
+
+.container {
+    margin: 20px 20% 0 20%;
+}
+
+#dropTarget {
+    display: flex;
+    width: auto;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 5px dashed #D77A61;
+    background-color: #DBD3D8;
+    transition: background-color 0.5s;
+    flex-direction: column;
+}
+
+#dropTarget * {
+    pointer-events: none;
+}
+
+#dropTarget.dragging {
+    background-color: #D8B4A0;
+}
+
+#uploadedImage {
+    display: none;
+    height: 70%;
+    margin: 1em;
+}
+
+#uploadedImage.uploaded {
+    display: block;
+}
